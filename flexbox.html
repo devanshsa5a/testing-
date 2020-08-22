@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container {
+            height: 577px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* flex-direction: column ; */
+            background-color: #11c5ac;
+            /* flex-wrap: wrap;
+            flex-flow: row wrap; */
+            /* justify-content: center; 
+            justify-content:space-evenly;
+            justify-content:space-between;
+            justify-content: space-around; */
+            /* justify-content: space-around;  */
+            /* justify-content work to align horizontally */
+            /* align for vertical-align */
+            align-items: center;
+            /* align-items: stretch; */
+
+        }
+
+
+        .item {
+            height: 150px;
+            width: 150px;
+            border: 4px solid rgb(3, 7, 243);
+            background-color: #dcd618c4;
+            margin: 3px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        #box1 {
+            /* order: 3;
+         flex-grow: 4;
+         flex-shrink: 7;*/
+            /* flex:grow shrink basis; */
+            flex: 3 4 300px;
+        }
+
+        #box2 {
+            flex-basis: 300px;
+            order: 1;
+            align-self: flex-start;
+        }
+
+        #box3 {
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="box1">First box</div>
+        <div class="item" id="box2">second box</div>
+        <div class="item" id="box3">third box</div>
+        <!-- <div class="item" id="box4">fourth box</div>
+        <div class="item" id="box5">fifth box</div>
+        <div class="item" id="box6">sixth box</div> -->
+    </div>
+</body>
+
+</html>
